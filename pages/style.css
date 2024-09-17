@@ -1,0 +1,484 @@
+/* home start*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+*{
+    scroll-behavior: smooth;
+    font-family: "Nunito", sans-serif;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+button{
+    font:inherit;
+}
+#home{
+    padding-top: 6rem;
+}
+.image img{
+    border-radius: 70%;
+    border: 7px solid #0074ba;
+    display: block;
+    margin: 0px auto;
+    height: 15.625rem;
+    margin-top: 6.25rem;
+}
+.proff{
+    text-align: center;
+    font-size: 22px;
+    color: #222222;
+    height: 1.2rem;
+}
+aside{
+    position: fixed; 
+    padding: 1rem;
+    left: 44.5rem;
+    top: 50vh;
+    background-color:white;
+    color:black;
+    display: flex;
+    justify-content: center;
+    transform: rotate(90deg);
+    width:100%;
+    z-index: 2;
+}
+.name{
+    font-size:2.5rem;
+    height: 2.5rem;
+}
+body{
+    margin: 0%;
+    background-color:#eeeeee;
+}
+#navi a{
+    padding:0rem 1.5rem;
+    font-size:1.2rem ;
+    color:black; 
+    text-decoration:none;
+}
+#navi a:hover{
+    color:#0074ba;
+}
+.transition a{
+    text-decoration: none;
+    color:#eeeeee;
+    background-color: black;
+    border: 2px solid black;
+    padding: 7px;
+    padding-left: 1rem;
+    display: inline-block;
+    padding-right: 1rem; 
+    margin-bottom:15rem ;
+    text-align: center;
+    width:fit-content; 
+    transition: all 1s;
+}
+.transition {
+    margin-top: 2.5rem;
+    text-align: center;
+}
+#home a:hover{
+    letter-spacing: 4px;
+    width: 10rem;
+    text-decoration:none;
+    background-color: #0074ba; 
+    border: 2px solid #0074ba;   
+}
+.size span{
+    color: #0074ba;
+    font-size: 60px;
+}
+.font span{
+    color:#0074ba;
+    font-size: 25px;
+}
+/* home end */
+/* about start */
+#about{
+    height: 100vh;
+}
+.divpad{
+    padding-right: 7rem;
+}
+.inlane{
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    flex-wrap: wrap;
+}
+.info{
+    margin-top: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16rem;
+}
+.info p{
+    font-size: 1.2rem;
+}
+.h1{
+    padding-top: 5rem;
+    text-align: center;
+    font-size: 60px;
+    height:30px;
+}
+.proff1{
+    line-height: 2;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+/* about end */
+/* services start */
+#services{
+    height: 100vh;
+    padding-top: 5rem;
+}
+h2{
+    font-size:  60px;
+}
+span{
+    color: #0074ba;
+}
+.box{
+    background-color: white;
+    border-radius: 20px;
+    width: fit-content;
+    padding: 30px;
+    text-align: center;
+}
+.box:hover{
+    background-image: radial-gradient(white,grey);
+    border: 2px solid #222222;
+}
+.align{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content:space-around;
+    text-align: center;
+} 
+/* services end */
+/* projects starts */
+#project{
+    height: 100vh;
+}
+#color{
+    color: #0074ba;
+    font-size: 60px;
+}
+.letter{
+    color: #0074ba;
+    font-size: 4rem;
+    background-color: white;
+    border-radius: 10px;
+    width:23rem;
+    height: 15rem;
+    padding: 3rem;
+    text-align: center;
+}
+.grid{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+/* projects end */
+/* contact starts */
+.h2{
+    font-size:2.5rem;
+    height: 2.5rem;
+    text-align: center;
+}
+#contact{
+    margin-top: 4rem;
+    height: fit-content;
+    padding: 1rem 1.5rem;
+    border: 1.5px solid black;
+    border-radius: 5px;
+    width:fit-content;
+}
+.d-1 input{
+    margin-top: 1rem;
+    height: 2rem;
+    width: 16.65rem;
+}
+.d-2 input{
+    height: 2rem;
+    width: 33.3rem;
+    margin-top: 1rem;
+}
+.d-3 textarea{
+    font-display: 65ch;
+    padding-bottom: 10rem;
+    width: 33.3rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    
+}
+.d-4 a{
+    color: white;
+    background-color: #222222;
+    margin-top: 1rem;
+    padding: 10px 20px;
+    text-decoration: none;
+    width: fit-content;
+    height: fit-content;
+    border: 2px solid #222222;
+    transition: all 1s;
+}
+.d-4 a:hover{
+    letter-spacing: 3px;
+    width: 4rem;
+    text-decoration:none;
+    background-color: #0074ba; 
+    border: 2px solid #0074ba; 
+}
+.inline{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+} 
+/* contact end */
+/* footer start */
+footer{
+    padding: 0.3rem;
+    text-align: center;
+    background-color: white;
+}
+/* footer end */
+/* change it into responsive */
+@media (max-width:786px){
+    /* home start*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+*{
+    scroll-behavior: smooth;
+    font-family: "Nunito", sans-serif;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+button{
+    font:inherit;
+}
+#home{
+    padding-top: 6rem;
+}
+.image img{
+    border-radius: 70%;
+    border: 7px solid #0074ba;
+    display: block;
+    margin: 0px auto;
+    height: 12.625rem;
+    margin-top: 4.25rem;
+}
+.proff{
+    text-align: center;
+    font-size: 18px;
+    color: #222222;
+    height: 1.2rem;
+}
+.name{
+    margin-bottom: 3rem;
+    font-size:2rem;
+    height: 2.5rem;
+}
+body{
+    margin: 0%;
+    background-color:#eeeeee;
+}
+.transition a{
+    text-decoration: none;
+    color:#eeeeee;
+    background-color: black;
+    border: 2px solid black;
+    padding: 7px;
+    padding-left: 1rem;
+    display: inline-block;
+    padding-right: 0.5remrem; 
+    margin-bottom:15rem ;
+    text-align: center;
+    width:fit-content; 
+    transition: all 1s;
+}
+.transition {
+    margin-top: 2.5rem;
+    text-align: center;
+}
+#home a:hover{
+    letter-spacing: 4px;
+    width: 10rem;
+    text-decoration:none;
+    background-color: #0074ba; 
+    border: 2px solid #0074ba;   
+}
+.size span{
+    color: #0074ba;
+    font-size: 2.75rem;
+}
+.font span{
+    color:#0074ba;
+    font-size: 25px;
+}
+/* home end */
+/* about start */
+#about{
+    height: 100%;
+}
+.inlane{
+    gap: 2rem;
+    display:flex;
+    flex-wrap: wrap;
+}
+.divpad{
+    padding: 1rem;
+}
+.inlane img{
+    padding-top: 10%;
+    width: 100%;
+    height: auto;
+}
+.info{
+    margin-top: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.info p{
+    font-size: 1.2rem;
+}
+.h1{
+    padding-top: 5rem;
+    text-align: center;
+    font-size: 2.75rem;
+    height:30px;
+}
+.proff1{
+    line-height: 1.5;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+/* about end */
+/* services start */
+#services{
+    height: 100%;
+    padding-top: 5rem;
+}
+h2{
+    font-size:  2.75rem;
+}
+span{
+    color: #0074ba;
+}
+.box{
+    background-color: white;
+    border-radius: 20px;
+    width: fit-content;
+    padding: 30px;
+    text-align: center;
+}
+.box:hover{
+    background-image: radial-gradient(white,grey);
+    border: 2px solid #222222;
+}
+.align{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content:space-around;
+    text-align: center;
+}
+/* services end */
+/* projects starts */
+#projects{
+    height: 100%;
+}
+#color{
+    color: #0074ba;
+    font-size: 60px;
+}
+.letter{
+    color: #0074ba;
+    font-size: 4rem;
+    background-color: white;
+    border-radius: 10px;
+    width:17rem;
+    height: 12rem;
+    padding: 3rem;
+    text-align: center;
+}
+.grid{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+/* projects end */
+/* contact starts */
+.h2{
+    font-size:2rem;
+    height: 2.5rem;
+    text-align: center;
+}
+#contact{
+    margin-top: 4rem;
+    height:25rem;
+    padding: 0.5rem 1rem;
+    border: 1.5px solid black;
+    border-radius: 5px;
+    width:100%;
+}
+.d-1 input{
+    margin-top: 1rem;
+    height: 2rem;
+    width: 8rem;
+}
+.d-2 input{
+    height: 2rem;
+    width: 16rem;
+    margin-top: 1rem;
+}
+.d-3 textarea{
+    font-display: 65ch;
+    padding-bottom: 10rem;
+    width: 16rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    
+}
+.d-4 a{
+    color: white;
+    background-color: #222222;
+    margin-top: 1rem;
+    text-decoration: none;
+    padding: 10px 20px;
+    width: fit-content;
+    height: fit-content;
+    border: 2px solid #222222;
+    transition: all 1s;
+}
+.d-4 a:hover{
+    letter-spacing: 3px;
+    width: 3rem;
+    text-decoration:none;
+    background-color: #0074ba; 
+    border: 2px solid #0074ba; 
+}
+.inline{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.inline img{
+    width: 100%;
+    height: auto;
+}
+/* contact end */
+/* footer start */
+footer{
+    margin-top: 10px;
+    padding: 0.3rem;
+    text-align: center;
+    background-color: white;
+}
+/* footer end */
+/* change it into responsive */
+}
