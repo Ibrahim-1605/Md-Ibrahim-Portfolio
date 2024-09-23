@@ -28,6 +28,26 @@ button{
     color: #222222;
     height: 1.2rem;
 }
+.onebyone{
+    color: #222222;
+    animation: onebyone 3s steps(15) infinite alternate,curser 0.5s infinite;
+    border-right: 2px solid black;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    vertical-align: middle;
+    width: 15ch;
+}
+@keyframes onebyone {
+    from{
+        width: 0;
+    }
+}
+@keyframes curser {
+    50%{
+        border: transparent;
+    }
+}
 aside{
     position: fixed; 
     padding: 1rem;
@@ -70,14 +90,14 @@ body{
     margin-bottom:15rem ;
     text-align: center;
     width:fit-content; 
-    transition: all 1s;
+    transition: all 0.5s;
 }
 .transition {
     margin-top: 2.5rem;
     text-align: center;
 }
 #home a:hover{
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     width: 10rem;
     text-decoration:none;
     background-color: #0074ba; 
@@ -143,10 +163,12 @@ span{
     width: fit-content;
     padding: 30px;
     text-align: center;
+    transition: all 2s;
 }
-.box:hover{
-    background-image: radial-gradient(white,grey);
-    border: 2px solid #222222;
+.box:hover{  
+    transform:scale(1.1);
+    background-image: radial-gradient(white,rgb(189, 188, 188));
+    border: 2px solid rgb(189, 188, 188);
 }
 .align{
     display: flex;
@@ -165,7 +187,6 @@ span{
     font-size: 60px;
 }
 .letter{
-    color: #0074ba;
     font-size: 4rem;
     background-color: white;
     border-radius: 10px;
@@ -173,6 +194,10 @@ span{
     height: 15rem;
     padding: 3rem;
     text-align: center;
+}
+.letter a{
+    color: #0074ba;
+    text-decoration: none;
 }
 .grid{
     display:flex;
@@ -195,17 +220,29 @@ span{
     border-radius: 5px;
     width:fit-content;
 }
+input,textarea{
+    outline: none;
+    border-radius: 4px;
+    border:2px solid rgb(177, 176, 176);
+}
+input:focus,textarea:focus{
+    border:2px solid #0074ba;
+    border-radius: 4px;
+}
 .d-1 input{
+    font-size: 1rem;
     margin-top: 1rem;
     height: 2rem;
     width: 16.65rem;
 }
 .d-2 input{
+    font-size: 1rem;
     height: 2rem;
     width: 33.3rem;
     margin-top: 1rem;
 }
 .d-3 textarea{
+    font-size: 1rem;
     font-display: 65ch;
     padding-bottom: 10rem;
     width: 33.3rem;
@@ -246,7 +283,7 @@ footer{
 /* footer end */
 /* change it into responsive */
 @media (max-width:786px){
-    /* home start*/
+    /* home responsive start*/
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 *{
     scroll-behavior: smooth;
@@ -276,6 +313,26 @@ button{
     color: #222222;
     height: 1.2rem;
 }
+.onebyone{
+    color: #222222;
+    animation: onebyone 3s steps(15) infinite alternate,curser 0.5s infinite;
+    border-right: 2px solid black;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    vertical-align: middle;
+    width: 15ch;
+}
+@keyframes onebyone {
+    from{
+        width: 0;
+    }
+}
+@keyframes curser {
+    50%{
+        border: transparent;
+    }
+}
 .name{
     margin-bottom: 3rem;
     font-size:2rem;
@@ -293,18 +350,18 @@ body{
     padding: 7px;
     padding-left: 1rem;
     display: inline-block;
-    padding-right: 0.5remrem; 
+    padding-right: 0.5rem; 
     margin-bottom:15rem ;
     text-align: center;
     width:fit-content; 
-    transition: all 1s;
+    transition: all 0.5s;
 }
 .transition {
     margin-top: 2.5rem;
     text-align: center;
 }
 #home a:hover{
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     width: 10rem;
     text-decoration:none;
     background-color: #0074ba; 
@@ -318,8 +375,8 @@ body{
     color:#0074ba;
     font-size: 25px;
 }
-/* home end */
-/* about start */
+/* home responsive end */
+/* about responsive start */
 #about{
     height: 100%;
 }
@@ -355,10 +412,10 @@ body{
     line-height: 1.5;
     font-size: 1.2rem;
     padding: 10px;
-    text-align: justify;
+    color: #222222;
 }
-/* about end */
-/* services start */
+/* about responsive end */
+/* services responsive start */
 #services{
     height: 100%;
     padding-top: 5rem;
@@ -377,8 +434,8 @@ span{
     text-align: center;
 }
 .box:hover{
-    background-image: radial-gradient(white,grey);
-    border: 2px solid #222222;
+    background-image: radial-gradient(white,rgb(189, 188, 188));
+    border: 2px solid grey;
 }
 .align{
     display: flex;
@@ -387,8 +444,8 @@ span{
     justify-content:space-around;
     text-align: center;
 }
-/* services end */
-/* projects starts */
+/* services responsive end */
+/* projects responsive starts */
 #projects{
     height: 100%;
 }
@@ -402,7 +459,7 @@ span{
     background-color: white;
     border-radius: 10px;
     width:17rem;
-    height: 12rem;
+    height: fit-content;
     padding: 3rem;
     text-align: center;
 }
@@ -412,8 +469,8 @@ span{
     justify-content: center;
     gap: 2rem;
 }
-/* projects end */
-/* contact starts */
+/* projects responsive end */
+/* contact responive starts */
 .h2{
     font-size:2rem;
     height: 2.5rem;
@@ -427,17 +484,29 @@ span{
     border-radius: 5px;
     width:100%;
 }
+input,textarea{
+    outline: none;
+    border-radius: 4px;
+    border:2px solid rgb(177, 176, 176);
+}
+input:focus,textarea:focus{
+    border:2px solid #0074ba;
+    border-radius: 4px;
+}
 .d-1 input{
     margin-top: 1rem;
     height: 2rem;
     width: 8rem;
+    font-size: 1rem;
 }
 .d-2 input{
     height: 2rem;
     width: 16rem;
     margin-top: 1rem;
+    font-size: 1rem;
 }
 .d-3 textarea{
+    font-size: 1rem;
     font-display: 65ch;
     padding-bottom: 10rem;
     width: 16rem;
@@ -472,14 +541,14 @@ span{
     width: 100%;
     height: auto;
 }
-/* contact end */
-/* footer start */
+/* contact responsive end */
+/* footer responsive start */
 footer{
     margin-top: 10px;
     padding: 0.3rem;
     text-align: center;
     background-color: white;
 }
-/* footer end */
+/* footer responsive end */
 /* change it into responsive */
 }
