@@ -31,13 +31,13 @@ button{
 }
 .onebyone{
     color: #222222;
-    animation: onebyone 3s steps(15) infinite alternate,curser 0.5s infinite;
+    animation: onebyone 3s steps(10) infinite alternate,curser 0.5s infinite;
     border-right: 2px solid black;
     display: inline-block;
     overflow: hidden;
     white-space: nowrap;
     vertical-align: middle;
-    width: 15ch;
+    width: 8.5ch;
 }
 @keyframes onebyone {
     from{
@@ -317,13 +317,13 @@ button{
 }
 .onebyone{
     color: #222222;
-    animation: onebyone 3s steps(15) infinite alternate,curser 0.5s infinite;
+    animation: onebyone 3s steps(10) infinite alternate,curser 0.5s infinite;
     border-right: 2px solid black;
     display: inline-block;
     overflow: hidden;
     white-space: nowrap;
     vertical-align: middle;
-    width: 15ch;
+    width: 8.5ch;
 }
 @keyframes onebyone {
     from{
